@@ -25,9 +25,9 @@ let colidiu = false;
 let meusPontos = 0;
 let pontosDoOponente = 0;
 
-let trilha;
-let ponto;
-let raquetada;
+let trilha = loadSound("trilhaa.mp3");
+let ponto = loadSound("ponto.mp3");
+let raquetada = loadSound("raquetada.mp3");
 
 function setup() {
   createCanvas(600, 400);
