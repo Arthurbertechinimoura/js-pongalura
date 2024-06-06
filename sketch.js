@@ -25,13 +25,19 @@ let colidiu = false;
 let meusPontos = 0;
 let pontosDoOponente = 0;
 
-let trilhaa;
+let trilha;
 let ponto;
 let raquetada;
 
+function preload(){
+  trilha = loadSound("trilha.mp3");
+  ponto = loadSound("ponto.mp3");
+  raquetada = loadSound("raquetada.mp3");
+}
+
 function setup() {
   createCanvas(600, 400);
-  trilhaa.loop();
+  trilha.loop();
 }
 
 function draw() {
@@ -131,9 +137,4 @@ function marcaPonto() {
     pontosDoOponente += 1;
     ponto.play();
   }
-}
-function preload(){
-  trilha = loadSound("trilha.mp3");
-  ponto = loadSound("ponto.mp3");
-  raquetada = loadSound("raquetada.mp3");
 }
